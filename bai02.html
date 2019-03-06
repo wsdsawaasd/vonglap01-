@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai02</title>
+</head>
+<body>
+    <script>
+        let temperature = null;
+        while (temperature < 20 || temperature > 100) {
+            temperature = parseFloat(prompt("input temperature"));
+            if (temperature < 20) {
+                temperature = parseFloat(prompt(" tang nhiet do lon hon 20"));
+            }
+            if (temperature > 100) {
+                temperature = parseFloat(prompt(" giam nhiet do nho hon 100"));
+            }
+            document.write(temperature);
+        }
+    </script>
+</body>
+</html>

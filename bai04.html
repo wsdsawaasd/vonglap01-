@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function fibonanci(number) {
+        let a = 1, b = 0, temp;
+        while (number >= 0) {
+            temp = a;
+            a = a + b;
+            b = temp;
+            number--
+        }
+        return b
+    }
+    let count = 0;
+    while (count >= 0) {
+        if (fibonanci(count) % 5 === 0) {
+            document.write(fibonanci(count) + "<br/>");
+            break;
+        } else {
+            count++
+        }
+    }
+</script>
+</body>
+</html>

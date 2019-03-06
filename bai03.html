@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai03</title>
+</head>
+<body>
+<script>
+    let Number = parseInt(prompt("nhap so luong so can in ra"));
+
+    function fibonanci(number) {
+        let a = 1, b = 0, temp;
+        while (number >= 0) {
+            temp = a;
+            a = a + b;
+            b = temp;
+            number--;
+        }
+        return b;
+    }
+
+    for (let i = 0; i < Number; i++) {
+        document.write(fibonanci(i) + "<br/>" );
+    }
+
+</script>
+</body>
+</html>
